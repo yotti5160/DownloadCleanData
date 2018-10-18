@@ -1,3 +1,6 @@
+此程式的功能為到 http://plvr.land.moi.gov.tw/DownloadOpenData 下載台北市的不動產交易資料，整理資料後再輸出檔案。
+
+
 共有4個.py檔:
 TLmain.py
 downloadData_01.py
