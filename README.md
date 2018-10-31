@@ -1,14 +1,11 @@
 此程式的功能為到 http://plvr.land.moi.gov.tw/DownloadOpenData 下載台北市的不動產交易資料，整理資料後再輸出檔案。
 
+共有3個.py檔:
+main.py
+downloadData.py
+cleanData.py
 
-共有4個.py檔:
-TLmain.py
-downloadData_01.py
-cleanData_01.py
-timeEvaluation.py
-
-其中TLmain.py, downloatData_01.py和cleanData_01.py 為一組，TLmain.py會使用其他兩檔案為模組，在執行TLmain.py前請確認有網路連線，也設定好downloatData_01.py和cleanData_01.py中的file path, 以確保讀寫檔能順利進行。
-而timeEvaluation.py可看到將dataframe轉換成其他格式的檔案所需時間的不同，在確認使用到的file path後可單獨執行此檔案。
+main.py會使用其他兩檔案為模組，在執行main.py前請確認有網路連線，也設定好downloatData.py和cleanData.py中的file path, 以確保讀寫檔能順利進行。
 
 以下對檔案的運作簡單的說明:
 下載的檔案命名方式如下:
