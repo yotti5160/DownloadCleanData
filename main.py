@@ -1,13 +1,13 @@
 '''
 Main file of downloading and cleaning data.
 Note:
-     1: Must check file paths in downloadData_01.py and cleanData_01.py
+     1: Must check file paths in downloadData.py and cleanData.py
         before executing.
      2: In order to download files, internet connection is required.      
 '''
 
-import downloadData_01 as downloadData
-import cleanData_01 as cleanData
+import downloadData
+import cleanData
 
 '''
  input: year(int), one or two arguement.
