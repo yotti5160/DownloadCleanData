@@ -3,15 +3,11 @@
 
 共有3個.py檔:  
 
-main.py  
-
-downloadData.py  
-
-cleanData.py  
-
+* main.py  
+* downloadData.py  
+* cleanData.py  
 
 main.py會使用其他兩檔案為模組，在執行main.py前請確認有網路連線，也設定好downloatData.py和cleanData.py中的file path, 以確保讀寫檔能順利進行。  
-
 
 以下對檔案的運作簡單的說明:  
 
