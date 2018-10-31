@@ -13,11 +13,10 @@ main.py會使用其他兩檔案為模組，在執行main.py前請確認有網路
 
 下載的檔案命名方式如下:  
 
-102年第一季的不動產買賣為102S1_A_lvr_land_A.csv   
-
-             預售屋買賣為102S1_A_lvr_land_B.csv   
-             
-             不動產租賃為102S1_A_lvr_land_C.csv   
+102年第一季的
+* 不動產買賣為102S1_A_lvr_land_A.csv   
+* 預售屋買賣為102S1_A_lvr_land_B.csv             
+* 不動產租賃為102S1_A_lvr_land_C.csv   
              
 在整理資料時，Bad data是在將字串轉換為int時，不在category_map.txt中的資料，Bad data不會被輸出，執行完會有一個invalidDataLog.txt，其中記錄了整理資料時的Bad data，以及輸出檔的資料筆數。   
 
