@@ -1,5 +1,5 @@
 '''
-Module for downloading data, note that dataLoc in line 17 may need modification.
+Module for downloading data, note that dataLoc in line 18 may need modification.
 This module need internet connection to be properly executed.
 '''
 
