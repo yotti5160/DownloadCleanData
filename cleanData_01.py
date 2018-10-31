@@ -1,22 +1,21 @@
 '''
 Module for cleaning data.
 Note that readLoc, writeLoc, invalidDataLogLoc, 
-outlierLogLoc and dbLoc in line 15 to line 23 may need modification.
-And, readLoc in line 16 must be the same as dataLoc in line 17 of downloadData_01.py
+outlierLogLoc and dbLoc in line 22 to line 24 may need modification.
+And, readLoc in line 16 must be the same as dataLoc in line 18 of downloadData.py
 '''
-
 import pandas as pd
 import sqlite3
 import collections
-
+import os
 
 # Two inputs, yearSeason(string) and form(string)
 def cleanData(yearSeason, form):  
-     
+    
     # readLoc: folder for download data  
-    readLoc='C:/Users/Yotti/Desktop/TL_hw/download/'
+    readLoc='C:/Users/Yotti/Desktop/TL_hw/download'
     # writeLoc: folder for output data(cleaned data)
-    writeLoc='C:/Users/Yotti/Desktop/TL_hw/output/'
+    writeLoc='C:/Users/Yotti/Desktop/TL_hw/output'
     # invalidDataLogLoc: location for log of invalid data 
     invalidDataLogLoc='C:/Users/Yotti/Desktop/TL_hw/output/invalidDataLog.txt'
     # outlierLogLoc: location for log of outliers
@@ -79,12 +78,13 @@ def cleanData(yearSeason, form):
     }
     
     # read file, there are two types of encoding 'utf8' and 'ansi'
+    readPath = os.path.join(readLoc, yearSeason+'_A_lvr_land_'+form+'.CSV')
     try:
-        df = pd.read_csv(readLoc+yearSeason+'_A_lvr_land_'+form+'.CSV', index_col=False, encoding = 'utf8', skiprows=range(1, 2))
+        df = pd.read_csv(readPath, index_col=False, encoding = 'utf8', skiprows=range(1, 2))
         print(yearSeason+'_A_lvr_land_'+form+'.CSV' + ' decode with utf8 success.')
     except UnicodeDecodeError:
         try:
-            df = pd.read_csv(readLoc+yearSeason+'_A_lvr_land_'+form+'.CSV', index_col=False, encoding = 'mbcs', skiprows=range(1, 2))
+            df = pd.read_csv(readPath, index_col=False, encoding = 'mbcs', skiprows=range(1, 2))
             print(yearSeason+'_A_lvr_land_'+form+'.CSV' + ' decode with mbcs success.')
         except Exception as e:
             print('error: ', e)
