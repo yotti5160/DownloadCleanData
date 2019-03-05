@@ -22,6 +22,8 @@ main.py會使用downloadData.py和cleanData.py模組，在執行前請設定好d
 
 <img src="https://github.com/yotti5160/DownloadCleanDataExercise/blob/master/screenshot05.PNG" width="400">
 
+<img src="https://github.com/yotti5160/DownloadCleanDataExercise/blob/master/screenshot07.PNG" width="600">
+
 <img src="https://github.com/yotti5160/DownloadCleanDataExercise/blob/master/screenshot06.PNG" width="600">
 
 
