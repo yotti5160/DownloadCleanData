@@ -12,7 +12,7 @@ main.py會使用downloadData.py和cleanData.py模組，在執行main.py前請確
 
 以下對檔案的運作簡單的說明:  
 
-<img src="https://github.com/yotti5160/DownloadCleanDataExercise/blob/master/screenshot01.PNG" width="100">
+<img src="https://github.com/yotti5160/DownloadCleanDataExercise/blob/master/screenshot01.PNG" width="500">
 
 
 
