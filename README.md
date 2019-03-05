@@ -8,7 +8,7 @@
 * cleanData.py
 * CATEGORY_MAP.py
 
-main.py會使用downloadData.py和cleanData.py模組，在執行main.py前請確認有網路連線，也設定好downloatData.py和cleanData.py中的file path, 以確保讀寫檔能順利進行。CATEGORY_MAP.py為整理資料時的規則，會將下載檔案中的一些column的資料轉換為整數。  
+main.py會使用downloadData.py和cleanData.py模組，在執行前請設定好downloatData.py和cleanData.py中的file path, 以確保讀寫檔能順利進行。CATEGORY_MAP.py為整理資料時的規則，會將下載檔案中的一些column的資料轉換為整數。  
 
 以下對檔案的運作簡單的說明:  
 
