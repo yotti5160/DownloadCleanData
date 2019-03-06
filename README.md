@@ -24,11 +24,15 @@ main.py會使用downloadData.py和cleanData.py模組，在執行前請設定好d
 
 <img src="https://github.com/yotti5160/DownloadCleanDataExercise/blob/master/screenshot07.PNG" width="600">
 
-此圖為整理後輸出的檔案，已將部分欄位以數字取代，整理的規則在文章的最後會有詳細的說明:   
+此圖為整理後輸出的檔案，已將部分欄位以數字取代，整理的規則(包含Bad data以及Abnormal data的定義)在文章的最後會有詳細的說明:   
 
 <img src="https://github.com/yotti5160/DownloadCleanDataExercise/blob/master/screenshot06.PNG" width="600">
 
+下圖為整理檔案後輸出的invalidDataLog.txt中前幾筆資料的截圖:
+
 <img src="https://github.com/yotti5160/DownloadCleanDataExercise/blob/master/screenshot04.PNG" width="600">
+
+下圖為outlierLog.txt中前幾筆資料的截圖:
 
 <img src="https://github.com/yotti5160/DownloadCleanDataExercise/blob/master/screenshot05.PNG" width="400">
 
