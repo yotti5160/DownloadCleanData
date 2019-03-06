@@ -16,6 +16,7 @@ main.py會使用downloadData.py和cleanData.py模組，在執行前請設定好d
 <img src="https://github.com/yotti5160/DownloadCleanDataExercise/blob/master/screenshot01.PNG" width="600">   
 
 在主程式main.py中執行processingData(102)，下載台北市102年四季的不動產買賣、預售屋買賣以及不動產租賃的資料。(若執行processingData(102, 107)則會下載102到107共6年的的資料)   
+下載完檔案後會將要留下得資料依CATEGORY_MAP.py的規定轉換格式，並刪去和預設格式不符合的資料，最後輸出整理好的csv檔以及msgpack檔，而被刪去的資料會依刪除的原因整理成invalidDataLog.txt和outlierLog.txt兩個檔案一併輸出。   
 在執行後主控台會顯示以下訊息:
 
 <img src="https://github.com/yotti5160/DownloadCleanDataExercise/blob/master/screenshot08.PNG" width="400">  
@@ -35,10 +36,6 @@ main.py會使用downloadData.py和cleanData.py模組，在執行前請設定好d
 下圖為outlierLog.txt中前幾筆資料的截圖:
 
 <img src="https://github.com/yotti5160/DownloadCleanDataExercise/blob/master/screenshot05.PNG" width="400">
-
-
-
-
 
 
 
