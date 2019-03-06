@@ -10,7 +10,7 @@
 
 main.py會使用downloadData.py和cleanData.py模組，在執行前請設定好downloatData.py和cleanData.py中的file path, 以確保讀寫檔能順利進行。CATEGORY_MAP.py為整理資料時的規則，會將下載檔案中的一些column的資料轉換為整數。  
 
-**以下對檔案的運作簡單的說明: **   
+##以下對檔案的運作簡單的說明:  
 
 此程式將會在此內政部不動產成交案件的網站下載台北市的資料。   
 <img src="https://github.com/yotti5160/DownloadCleanDataExercise/blob/master/screenshot01.PNG" width="600">   
@@ -42,7 +42,7 @@ main.py會使用downloadData.py和cleanData.py模組，在執行前請設定好d
 
 
 
-**以下為整理檔案的規則:   **
+##以下為整理檔案的規則:
 
 下載的檔案命名方式如下:  
 
