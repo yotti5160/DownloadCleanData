@@ -12,11 +12,11 @@ main.py會使用downloadData.py和cleanData.py模組，在執行前請設定好d
 
 以下對檔案的運作簡單的說明:  
 
-<img src="https://github.com/yotti5160/DownloadCleanDataExercise/blob/master/screenshot01.PNG" width="600">
+<img src="https://github.com/yotti5160/DownloadCleanDataExercise/blob/master/screenshot01.PNG" width="600">   
 
-在主程式main.py中執行processingData(102)，下載台北市102年四季的不動產買賣、預售屋買賣以及不動產租賃的資料。
-(若執行processingData(102, 107)則會下載102到107共6年的的資料)
-<img src="https://github.com/yotti5160/DownloadCleanDataExercise/blob/master/screenshot08.PNG" width="400">
+在主程式main.py中執行processingData(102)，下載台北市102年四季的不動產買賣、預售屋買賣以及不動產租賃的資料。(若執行processingData(102, 107)則會下載102到107共6年的的資料)   
+
+<img src="https://github.com/yotti5160/DownloadCleanDataExercise/blob/master/screenshot08.PNG" width="400">   
 
 <img src="https://github.com/yotti5160/DownloadCleanDataExercise/blob/master/screenshot07.PNG" width="600">
 
