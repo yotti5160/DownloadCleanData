@@ -53,4 +53,3 @@ def downloadYear(*year):
         for y in range(year[0], year[1]+1):
             download(y)
     return output
-
