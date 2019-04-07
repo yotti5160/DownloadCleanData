@@ -82,13 +82,6 @@ def cleanData(yearSeason, form):
     try:
         df = pd.read_csv(readPath, index_col=False, encoding = 'utf8', skiprows=range(1, 2))
         print(yearSeason+'_A_lvr_land_'+form+'.CSV' + ' decode with utf8 success.')
-    except UnicodeDecodeError:
-        try:
-            df = pd.read_csv(readPath, index_col=False, encoding = 'mbcs', skiprows=range(1, 2))
-            print(yearSeason+'_A_lvr_land_'+form+'.CSV' + ' decode with mbcs success.')
-        except Exception as e:
-            print('error: ', e)
-            return
     except Exception as e:
         print('error: ', e)
         return
