@@ -124,9 +124,12 @@ def cleanData(yearSeason, form):
     # drop invalid rows
     df.drop(df.index[rowsToDrop], inplace=True)
     
+    # define dollarPerM2
+    dollarPerM2='單價元/平方公尺' if '單價元/平方公尺' in df.columns else '單價元平方公尺'
+    
     # find outliers on '單價(元/平方公尺)' (by IQR)
-    dic_Q1=df.groupby(['鄉鎮市區', '建物型態'])['單價元/平方公尺'].quantile(.25).to_dict()
-    dic_Q3=df.groupby(['鄉鎮市區', '建物型態'])['單價元/平方公尺'].quantile(.75).to_dict()    
+    dic_Q1=df.groupby(['鄉鎮市區', '建物型態'])[dollarPerM2].quantile(.25).to_dict()
+    dic_Q3=df.groupby(['鄉鎮市區', '建物型態'])[dollarPerM2].quantile(.75).to_dict()    
        
     groupIQRrange=collections.defaultdict(list) # contain good data range of each district and building type.
     for key in dic_Q1:
@@ -139,12 +142,12 @@ def cleanData(yearSeason, form):
     
     outlierBook, outlierCount, farOutlierCount=[], 0, 0
     for index,row in df.iterrows():
-        if not pd.isnull(row['單價元/平方公尺']):
-            if row['單價元/平方公尺']>groupIQRrange[(row['鄉鎮市區'], row['建物型態'])][1][1] or row['單價元/平方公尺']<groupIQRrange[(row['鄉鎮市區'], row['建物型態'])][1][0]:
+        if not pd.isnull(row[dollarPerM2]):
+            if row[dollarPerM2]>groupIQRrange[(row['鄉鎮市區'], row['建物型態'])][1][1] or row[dollarPerM2]<groupIQRrange[(row['鄉鎮市區'], row['建物型態'])][1][0]:
                 outlierBook.append((index, 2))
                 farOutlierCount+=1
                 df.at[index, 'outlier']=2
-            elif row['單價元/平方公尺']>groupIQRrange[(row['鄉鎮市區'], row['建物型態'])][0][1] or row['單價元/平方公尺']<groupIQRrange[(row['鄉鎮市區'], row['建物型態'])][0][0]:
+            elif row[dollarPerM2]>groupIQRrange[(row['鄉鎮市區'], row['建物型態'])][0][1] or row[dollarPerM2]<groupIQRrange[(row['鄉鎮市區'], row['建物型態'])][0][0]:
                 outlierBook.append((index, 1))
                 outlierCount+=1
                 df.at[index, 'outlier']=1
