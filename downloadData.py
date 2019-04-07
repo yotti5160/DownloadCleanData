@@ -15,7 +15,7 @@ import urllib
 def downloadYear(*year):
     
     # dataLoc: folder to save download files
-    dataLoc = 'C:/Users/Yotti/Desktop/TL_hw/download'
+    dataLoc = 'C:/Users/.../download'
     
     url_part = [
             "http://plvr.land.moi.gov.tw/DownloadSeason?season=",
