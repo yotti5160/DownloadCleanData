@@ -13,15 +13,15 @@ import os
 def cleanData(yearSeason, form):  
     
     # readLoc: folder for download data  
-    readLoc='C:/Users/Yotti/Desktop/TL_hw/download'
+    readLoc='C:/Users/.../download'
     # writeLoc: folder for output data(cleaned data)
-    writeLoc='C:/Users/Yotti/Desktop/TL_hw/output'
+    writeLoc='C:/Users/...output'
     # invalidDataLogLoc: location for log of invalid data 
-    invalidDataLogLoc='C:/Users/Yotti/Desktop/TL_hw/output/invalidDataLog.txt'
+    invalidDataLogLoc='C:/Users/.../output/invalidDataLog.txt'
     # outlierLogLoc: location for log of outliers
-    outlierLogLoc='C:/Users/Yotti/Desktop/TL_hw/output/outlierLog.txt'
+    outlierLogLoc='C:/Users/.../output/outlierLog.txt'
     # dbLoc: location of SQLite database
-    dbLoc='C:/Users/Yotti/Desktop/TL_hw/output/test.db'
+    dbLoc='C:/Users/.../output/test.db'
     
     # dictionary for change data
     CATEGORY_MAP = {'主要建材': {'': 0,
