@@ -164,8 +164,8 @@ def cleanData(yearSeason, form):
     f.write(''.join(['There are ',str(outlierCount),' outliers and ',str(farOutlierCount), ' far outliers in ',yearSeason,'_A_lvr_land_',form,'.CSV','.\n\n']))
     f.close()
     
-    writePath = os.path.join(writeLoc, 'cleaned_'+yearSeason+'_A_lvr_land_'+form)
-    # output cleaned data to csv         
+    # output cleaned data to csv  
+    writePath = os.path.join(writeLoc, 'cleaned_'+yearSeason+'_A_lvr_land_'+form)       
     df.to_csv(writePath+'.CSV', index=False, encoding='utf-8-sig')  
     
     # output cleaned data to msgpack  
