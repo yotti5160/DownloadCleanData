@@ -15,7 +15,7 @@ def cleanData(yearSeason, form):
     # readLoc: folder for download data  
     readLoc='C:/Users/.../download'
     # writeLoc: folder for output data(cleaned data)
-    writeLoc='C:/Users/...output'
+    writeLoc='C:/Users/.../output'
     # invalidDataLogLoc: location for log of invalid data 
     invalidDataLogLoc='C:/Users/.../output/invalidDataLog.txt'
     # outlierLogLoc: location for log of outliers
