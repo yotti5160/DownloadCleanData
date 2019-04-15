@@ -13,29 +13,32 @@ main.py會使用downloadData.py和cleanData.py模組，在執行前請設定好d
 ### 以下對檔案的運作簡單的說明: 
 
 此程式將會在此內政部不動產成交案件的網站下載台北市的資料。   
-<img src="https://github.com/yotti5160/DownloadCleanDataExercise/blob/master/screenshot01.PNG" width="600">   
+<img src="https://github.com/yotti5160/DownloadCleanDataExercise/blob/master/pic/screenshot01.PNG" width="600">   
 
 在主程式main.py中執行processingData(102)，下載台北市102年四季的不動產買賣、預售屋買賣以及不動產租賃的資料。(若執行processingData(102, 107)則會下載102到107共6年的的資料)   
 下載完檔案後會將要留下的資料依CATEGORY_MAP.py的規定轉換格式，並刪去和預設格式不符合的資料，最後輸出整理好的csv檔以及msgpack檔，而被刪去的資料會依刪除的原因整理成invalidDataLog.txt和outlierLog.txt兩個檔案一併輸出。   
 在執行後主控台會顯示以下訊息:
 
-<img src="https://github.com/yotti5160/DownloadCleanDataExercise/blob/master/screenshot08.PNG" width="400">  
+<img src="https://github.com/yotti5160/DownloadCleanDataExercise/blob/master/pic/screenshot08.PNG" width="400">  
 
 下圖為下載的台北市102年第1季不動產買賣資料的部分截圖(未整理資料):
 
-<img src="https://github.com/yotti5160/DownloadCleanDataExercise/blob/master/screenshot07.PNG" width="600">
+<img src="https://github.com/yotti5160/DownloadCleanDataExercise/blob/master/pic/screenshot07.PNG" width="600">
 
 下圖為整理後輸出的檔案，已將部分欄位以數字取代，整理的規則(包含Bad data以及Abnormal data的定義)在文章的最後會有詳細的說明:   
 
-<img src="https://github.com/yotti5160/DownloadCleanDataExercise/blob/master/screenshot06.PNG" width="600">
+<img src="https://github.com/yotti5160/DownloadCleanDataExercise/blob/master/pic/screenshot06.PNG" width="600">
 
 下圖為整理檔案後輸出的invalidDataLog.txt中前幾筆資料的截圖:
 
-<img src="https://github.com/yotti5160/DownloadCleanDataExercise/blob/master/screenshot04.PNG" width="600">
+<img src="https://github.com/yotti5160/DownloadCleanDataExercise/blob/master/pic/screenshot04.PNG" width="600">
 
 下圖為outlierLog.txt中前幾筆資料的截圖:
 
-<img src="https://github.com/yotti5160/DownloadCleanDataExercise/blob/master/screenshot05.PNG" width="400">
+<img src="https://github.com/yotti5160/DownloadCleanDataExercise/blob/master/pic/screenshot05.PNG" width="400">
+
+下圖為 102至 107年不動產買賣平均價錢圖表:
+<img src="https://github.com/yotti5160/DownloadCleanDataExercise/blob/master/pic/Figure_1.PNG" width="400">
 
 
 
