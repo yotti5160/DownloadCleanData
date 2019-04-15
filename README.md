@@ -38,7 +38,8 @@ main.py會使用downloadData.py和cleanData.py模組，在執行前請設定好d
 <img src="https://github.com/yotti5160/DownloadCleanDataExercise/blob/master/pic/screenshot05.PNG" width="400">
 
 下圖為 102至 107年不動產買賣平均價錢圖表:
-<img src="https://github.com/yotti5160/DownloadCleanData/blob/master/pic/Figure_1.png" width="400">
+
+<img src="https://github.com/yotti5160/DownloadCleanData/blob/master/pic/Figure_1.png" width="800">
 
 
 
